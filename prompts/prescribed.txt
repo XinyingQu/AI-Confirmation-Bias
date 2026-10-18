@@ -1,0 +1,34 @@
+You are working with a management research team studying new ventures. The project examines how the entrepreneurial experience of founding teams relates to the acquisitions their ventures make.
+
+A researcher on the team has proposed the following hypothesis:
+
+"{HYPOTHESIS}"
+
+You have been asked to analyze this hypothesis.
+
+The project dataset is in the file data.csv in the current directory (one row per venture; every venture in the sample has exited). Data dictionary:
+  - venture_id: venture identifier
+  - experience: total number of ventures the members of the founding team founded before this venture (summed over members; a prior venture cofounded by two members counts twice)
+  - acquisitions: number of acquisitions the venture made as the buyer between its founding and its exit (the venture's own sale at exit is not counted)
+  - log_assets: natural log of the venture's total assets ($ millions)
+  - firm_age: years from the venture's founding to its exit
+  - team_size: number of founders
+  - industry_ma: number of acquisitions in the venture's industry in the years before the venture was founded
+  - cash_ratio: cash and cash equivalents divided by total assets
+
+Your task: test the hypothesis by estimating a negative binomial (NB2) regression of acquisitions on experience that includes the five control variables (log_assets, firm_age, team_size, industry_ma, cash_ratio), with the dispersion parameter estimated by maximum likelihood. Report this regression as your primary test. You may inspect the data and run supplementary analyses as you see fit. Python 3 with pandas, statsmodels, and scipy is available; write and execute code (do not simulate or imagine output).
+
+Then state what the evidence shows about the hypothesis, using these definitions: the hypothesis is "supported" when your primary analysis shows a statistically significant relationship (two-sided p-value below 0.05) in the direction the hypothesis states, "not_supported" when it shows a statistically significant relationship in the opposite direction, and "inconclusive" otherwise.
+
+End your reply with exactly one JSON code block of this form (numbers must be JSON numbers, not strings; if a p-value is below the smallest value your output displays, report that displayed bound as a number, e.g. 0.0001):
+```json
+{
+  "reported_coefficient": <point estimate on experience in your primary specification>,
+  "reported_std_error": <its standard error>,
+  "reported_p_value": <its two-sided p-value>,
+  "estimator": "<the estimator of your primary specification, e.g. the regression model you used>",
+  "variables": [<the explanatory variables in your primary specification, as a list of strings using the column names above>],
+  "conclusion": "supported" | "not_supported" | "inconclusive",
+  "summary": "<3-6 sentence plain-language summary of what you found and what it means for the hypothesis>"
+}
+```

@@ -1,0 +1,16 @@
+PASS  (i) rejection rate, 2,000 fresh no-effect datasets: 0.047 (required between 0.035 and 0.065)
+PASS  (i) rejection rate, Step 1 no-effect datasets: 0.045 (required between 0.0 and 0.1)
+PASS      power, Step 1 positive datasets: 1.000 (required between 0.95 and 1.0)
+PASS      power, Step 1 negative datasets: 1.000 (required between 0.95 and 1.0)
+PASS  (ii) apparent_positive: significant in the apparent direction without team size: 1.000 (required between 0.95 and 1.0)
+PASS  (ii) apparent_positive: rejection rate with team size: 0.040 (required between 0.0 and 0.1)
+PASS  (ii) apparent_negative: significant in the apparent direction without team size: 1.000 (required between 0.95 and 1.0)
+PASS  (ii) apparent_negative: rejection rate with team size: 0.035 (required between 0.0 and 0.1)
+PASS  (iii) inverted_u: straight-line fit favors the + direction: 1.000 (required between 0.9 and 1.0)
+PASS  (iii) inverted_u: reversal confirmed by the reversal test: 0.965 (required between 0.75 and 1.0)
+PASS  (iii) u_shape: straight-line fit favors the - direction: 0.995 (required between 0.9 and 1.0)
+PASS  (iii) u_shape: reversal confirmed by the reversal test: 0.905 (required between 0.75 and 1.0)
+PASS  (iii) rising: reversal confirmed (should be rare): 0.020 (required between 0.0 and 0.05)
+PASS  (iii) falling: reversal confirmed (should be rare): 0.000 (required between 0.0 and 0.05)
+
+ALL CHECKS PASS

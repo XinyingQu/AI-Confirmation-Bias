@@ -1,0 +1,31 @@
+Step 2, significant positive experience estimate, 400 datasets: without log assets, cash ratio, and firm age 83 (20.8 percent); with all controls 8 (2.0 percent)
+Step 2, claude, runs keeping all controls, share supported: H+ 2.1 percent of 281; H- 1.9 percent of 367
+Step 2, gpt, runs keeping all controls, share supported: H+ 2.3 percent of 87; H- 2.4 percent of 208
+Mean acquisitions per venture, apparent_negative: 1.16
+Mean acquisitions per venture, apparent_positive: 1.17
+Mean acquisitions per venture, falling: 0.85
+Mean acquisitions per venture, inverted_u: 1.73
+Mean acquisitions per venture, negative: 0.86
+Mean acquisitions per venture, none: 1.09
+Mean acquisitions per venture, positive: 1.46
+Mean acquisitions per venture, rising: 1.47
+Mean acquisitions per venture, u_shape: 0.74
+Share of ventures above the turning point: 4.80 percent over the 400 curved datasets; 4.83 percent over the 374 confirmed
+Step 3, claude, favored direction, share supported: all 400 curved datasets 38.5 percent; the 26 unconfirmed datasets 26 of 26
+Step 3, gpt, favored direction, share supported: all 400 curved datasets 0.5 percent; the 26 unconfirmed datasets 2 of 26
+Step 2, claude, matched pairs by within-pair difference (congruent minus incongruent): -0.5: 9; +0.0: 164; +0.5: 27
+Step 2, gpt, matched pairs by within-pair difference (congruent minus incongruent): -0.5: 9; +0.0: 164; +0.5: 27
+Step 2, claude, share supported, keeping all controls: congruent 2.3, incongruent 1.8 percent; leaving a control out: congruent 32.6, incongruent 21.7 percent
+Step 2, gpt, share supported, keeping all controls: congruent 2.4, incongruent 2.4 percent; leaving a control out: congruent 19.0, incongruent 9.9 percent
+Step 2, nonzero matched pairs common to both models: 16 of 36
+Step 3, claude, favored direction, confirmed datasets, verdicts: supported 34.2 percent; inconclusive 55.3 percent; not_supported 10.4 percent
+Step 3, gpt, favored direction, confirmed datasets, verdicts: supported 0.0 percent; inconclusive 26.5 percent; not_supported 73.5 percent
+Step 3, Claude, endorsing runs on confirmed curved datasets: 128; replies invoking the prompt's rule or definition: 60; replies calling the data at high experience thin, sparse, or few: 108
+Step 1 runs in which the closest matching fit is not the prescribed regression: 10
+GPT records made before the shell setting was changed: 21
+Command outputs replaced by a removal note: 30
+Interrupted session s1_positive_050__H- (claude): 6 recorded regressions; reply: "You've hit your session limit · resets 2"
+Interrupted session s2_apparent_negative_100__H- (claude): 7 recorded regressions; reply: "You've hit your session limit · resets 2"
+Interrupted session s2_apparent_negative_112__H- (claude): 13 recorded regressions; reply: "You've hit your session limit · resets 2"
+Interrupted session s3_inverted_u_054__H+ (claude): 0 recorded regressions; reply: "You've hit your session limit · resets 2"
+Interrupted session s3_u_shape_051__H- (claude): 7 recorded regressions; reply: "You've hit your session limit · resets 2"
